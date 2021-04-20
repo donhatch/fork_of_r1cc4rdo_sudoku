@@ -56,7 +56,7 @@ of the cells' peers in that row and for any other group both cells belong to.
 _basic elimination_ corresponds to a subset size of 1: we have an assigned cell which contains 1 candidate value that
 can be removed from all the other cells in the same row, column or square. _sole candidate_ corresponds to a subset
 size of 8: there are 8 cells, covering up 8 values so the single cell left out must take the 9th one. _naked twins_
-corresponds to a subset of size 2; its dual _hidden twins_ to a subset of size 6.
+corresponds to a subset of size 2; its dual _hidden twins_ to a subset of size 7.
 
 This strategy alone, in 7 lines of code, generalizes all the following:
 
@@ -69,9 +69,11 @@ This strategy alone, in 7 lines of code, generalizes all the following:
 * _pointing pairs_ (common supersets)
 * _pointing triples_ (common supersets)
 * _naked twins_ (subset size: 2)
-* _hidden twins_ (subset size: 6)
+* _hidden twins_ (subset size: 7)
 * _naked triplets_ (subset size: 3)
-* _hidden triplets_ (subset size: 5)
+* _hidden triplets_ (subset size: 6)
+* _naked quads_ (subset size: 4)
+* _hidden quads_ (subset size: 5)
 * _general permutation_
 * _naked chains_
 * _hidden chains_

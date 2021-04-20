@@ -85,8 +85,9 @@ def solve(board):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) == 2: sudoku = sys.argv[1]
-    board = list(islice((c if c in '123456789' else '123456789' for c in sudoku if c in '123456789.0'), 81))
+    if len(sys.argv) > 1:
+        sudoku = ' '.join(sys.argv[1:])
+    board = list(islice((c if c in '123456789' else '123456789' for c in sudoku if c in '0123456789.'), 81))
     line, div = ' {} {} {} | {} {} {} | {} {} {} \n', '-------+-------+-------\n'
     print (line * 3 + div + line * 3 + div + line * 3).format(*solve(board))
     print "num_solves = %r" % (num_solves,)
